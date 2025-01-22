@@ -59,29 +59,29 @@ body {
     justify-content: center;
 }
 
-.green {
+.correct {
     font-weight: 500;
     background-color: #88AB8E;
 }
 
-.yellow {
+.close_to {
     font-weight: 500;
     background-color: #DBCC95;
 }
 
-.grey {
+.no_match {
     font-weight: 500;
     background-color: #D0D4CA;
 }
 
-.red {
-    border: 3px solid rgb(234, 60, 60);
-    background-color: rgb(250, 151, 151);
+.wrong {
+    border: 3px solid #C21010;
+    transform: scale(1.1);
 }
 
 .loading_icon {
     font-size: 30px;
-    color: #0b1c0c;
+    color: black;
     position:absolute;
     z-index: 1000;
     justify-self: center;

@@ -95,12 +95,12 @@ function deleteInput(){
 function invalidWord(){
     let squares = currentLine.querySelectorAll(".square");
     squares.forEach(square => {
-        square.classList.add("red");
+        square.classList.add("wrong");
     });
 
     setTimeout(function() {
         squares.forEach(square => {
-            square.classList.remove("red");
+            square.classList.remove("wrong");
         });
     }, 500);
 }
@@ -167,7 +167,7 @@ function validWordCheck(){
     // first we iterate only for the correct letters and then for the others due to overwriting issues
     for (let i = 0; i < WORDLENGTH; i++){
         if (typedWord[i] === word[i]){
-            squares[i].classList.add("green");
+            squares[i].classList.add("correct");
             objWord[typedWord[i]] --;
             console.log(objWord);
         }
@@ -178,12 +178,12 @@ function validWordCheck(){
             //do nothing
         }
         else if (word.includes(typedWord[i]) && (objWord[typedWord[i]] > 0)){   
-            squares[i].classList.add("yellow");
+            squares[i].classList.add("close_to");
             objWord[typedWord[i]] --;
             console.log(objWord);
         }
         else {
-            squares[i].classList.add("grey");
+            squares[i].classList.add("no_match");
         }
     }
 
