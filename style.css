@@ -80,7 +80,8 @@ body {
 }
 
 .loading_icon {
-    width: 150px;
+    font-size: 30px;
+    color: #0b1c0c;
     position:absolute;
     z-index: 1000;
     justify-self: center;
