@@ -4,62 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="structure">
         <div class="popup_end hidden">
-            <div class="popup_state hidden">You Won!</div>
-            <div class="popup_word hidden">The word is: APPLE</div>
-            <img src="./refresh.png" alt="Refresh Button" class="refresh_button hidden">
-        </div>
-        <span class="fa-solid fa-frog fa-bounce loading_icon hidden"></span>
-        <div class="game_title">Word Masters</div>
-        <div class="game_body">
-            <div class="line">
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
+            <div class="tabs_management">
+                <div class="tab min"><span class="fa-solid fa-window-minimize"></span></div>
+                <div class="tab max"><span class="fa-regular fa-window-maximize"></span></div>
+                <div class="tab close"><span class="fa-solid fa-xmark"></span></div>
             </div>
-            <div class="line">
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-            </div>
-            <div class="line">
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-            </div>
-            <div class="line">
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-            </div>
-            <div class="line">
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-            </div>
-            <div class="line">
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
+            <div class="popup_end_inside">
+                <div class="popup_state hidden">You Won!</div>
+                <div class="popup_word hidden">The word is: APPLE</div>
+                 <button  class="refresh_button hidden">Play Again</button>
             </div>
         </div>
+         <div class="loading hidden">
+                <div class="tabs_management">
+                    <div class="tab min"><span class="fa-solid fa-window-minimize"></span></div>
+                    <div class="tab max"><span class="fa-regular fa-window-maximize"></span></div>
+                    <div class="tab close"><span class="fa-solid fa-xmark"></span></div>
+                </div>
+                <div class="loading_inside">
+                    <p>Loading ...</p>
+                </div>
+         </div>
+        <div class="game_screen_outside">
+            <div class="tabs_management">
+                <div class="tab min"><span class="fa-solid fa-window-minimize"></span></div>
+                <div class="tab max"><span class="fa-regular fa-window-maximize"></span></div>
+                <div class="tab close"><span class="fa-solid fa-xmark"></span></div>
+            </div>
+            <div class="game_screen_inside">
+                <div class="game_title">Word Masters</div>
+                <div class="game_body">
+                    <div class="line">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="line">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="line">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="line">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="line">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="line">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="instructions">
+            <div class="tabs_management">
+                <div class="tab min"><span class="fa-solid fa-window-minimize"></span></div>
+                <div class="tab max"><span class="fa-regular fa-window-maximize"></span></div>
+                <div class="tab close"><span class="fa-solid fa-xmark"></span></div>
+            </div>
+            <div class="instructions_inside">
+                <div class="color_match">
+                    <div class="correct_color"></div>
+                    <p> - Correct Letter / Correct Position</p>
+                </div>
+                <div class="color_match">
+                    <div class="close_to_color"></div>
+                    <p> - Correct Letter / Wrong Position</p>
+                </div>
+                <div class="color_match">
+                    <div class="no_match_color"></div>
+                    <p> - Wrong Letter / No Position</p>
+                </div>
+                <div class="color_match">
+                    <div class="wrong_word_color"></div>
+                    <p> - Word Does Not Exist</p>
+                </div>
+            </div>
+         </div>
     </div>
     <script src="./wordle_logics.js"></script>
 </body>
